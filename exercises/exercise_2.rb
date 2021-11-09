@@ -5,3 +5,8 @@ puts "Exercise 2"
 puts "----------"
 
 # Your code goes here ...
+
+
+
+# bundle exec ruby exercises/exercise_2.rb
+# irb -r './setup.rb'
