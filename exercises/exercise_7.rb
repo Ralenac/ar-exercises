@@ -17,8 +17,16 @@ puts "----------"
 # Stores must always have a name that is a minimum of 3 characters
 # Stores have an annual_revenue that is a number (integer) that must be 0 or more
 # BONUS: Stores must carry at least one of the men's or women's apparel (hint: use a custom validation method - don't use a Validator class)
+
 # Ask the user for a store name (store it in a variable)
 # Attempt to create a store with the inputted name but leave out the other fields (annual_revenue, mens_apparel, and womens_apparel)
 # Display the error messages provided back from ActiveRecord to the user (one on each line) after you attempt to save/create the record
 
 # Your code goes here ...
+
+
+puts "Type the name of your store: "
+store_name = gets.chomp
+
+@store7 = Store.create(name: store_name)
+puts @store7.errors.details
