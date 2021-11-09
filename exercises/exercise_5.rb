@@ -16,6 +16,11 @@ puts "----------"
 
 # Your code goes here ...
 
+puts Store.sum(:annual_revenue)
+puts Store.average(:annual_revenue)
+puts Store.where("annual_revenue > 1000000").count
+
+
 
 # bundle exec ruby exercises/exercise_5.rb
 # irb -r './setup.rb'
